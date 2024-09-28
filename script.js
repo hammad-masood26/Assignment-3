@@ -1,5 +1,10 @@
-let table=(prompt("Enter the table you want: "))
+let num=Number(prompt("Enter the table you want: "))
 
 for (let i = 1; i <= 10; i++) {
-    console.log(table," x ", i , " = ", i*table);
+    if(!num){
+        console.log("5 x ", i , " = ", i*5);
+    }
+    else{
+        console.log(num," x ", i , " = ", i*num);
+    }
 }
